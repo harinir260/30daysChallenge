@@ -1,0 +1,59 @@
+/* Basic setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e5ec;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Container for the toggle switch */
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle input - hidden */
+.toggle-input {
+    display: none;
+}
+
+/* Toggle label - Neumorphism style */
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: #e0e5ec;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: inset 6px 6px 16px #babecc, inset -6px -6px 16px #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Toggle circle */
+.toggle-label::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #e0e5ec;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    box-shadow: 6px 6px 16px #babecc, -6px -6px 16px #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Toggle on state */
+.toggle-input:checked + .toggle-label {
+    background-color: #a4b0be;
+    box-shadow: inset 6px 6px 16px #8c98a4, inset -6px -6px 16px #bcc6d2;
+}
+
+.toggle-input:checked + .toggle-label::after {
+    left: 33px;
+    background-color: #a4b0be;
+    box-shadow: 6px 6px 16px #8c98a4, -6px -6px 16px #dce2e9;
+}

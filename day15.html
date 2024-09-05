@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e5ec;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.login-container {
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: 9px 9px 16px #a3b1c6,
+                -9px -9px 16px #ffffff;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #e0e5ec;
+    box-shadow: inset 8px 8px 16px #a3b1c6,
+                inset -8px -8px 16px #ffffff;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background: #e0e5ec;
+    box-shadow: 8px 8px 16px #a3b1c6,
+                -8px -8px 16px #ffffff;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    box-shadow: inset 8px 8px 16px #a3b1c6,
+                inset -8px -8px 16px #ffffff;
+}
+
+    </style>
+    <title>Neumorphic Login Form</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-container">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+</body>
+</html>

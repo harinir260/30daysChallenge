@@ -1,0 +1,116 @@
+<html>
+<head>
+        
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-image: linear-gradient(to right, #7ddadf,#e5b1e5);
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 700px;
+                
+            }
+            .box{
+                background-color: white;
+                width:300px;
+                height:500px;
+                border:1px solid white;
+                border-radius: 25px;
+                padding: 10px;
+                margin: 40%;
+                box-shadow: 1px 1px 2px 2px rgb(144, 140, 140);
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+          
+            #box1{
+                width: 70%;
+                padding: auto;
+                border-radius: 10px;
+                border-color: aliceblue;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+                color: gray;
+                height: fit-content;
+                margin-top: 30%;
+                box-shadow: lightgrey;
+            }
+            #box2{
+                width: 70%;
+                padding: auto;
+                border-radius: 10px;
+                border-color: aliceblue;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+                color: gray;
+                margin-top: 10%;
+                box-shadow: lightgrey;
+            }
+            .p2{
+                color: rgb(57, 132, 237);
+                font-family:Arial, Helvetica, sans-serif;
+                margin-right: 35%;
+                font-size: small;
+                cursor: pointer;
+            }
+            .button{
+                border: #7ddadf;
+                color: white;
+                padding: 10px 5px;
+                text-align: center;
+                display: inline-block;
+                font-size: medium;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button1{
+                background-image: linear-gradient(to right, rgb(32, 36, 142),rgb(11, 11, 100));
+                font-family: Arial, Helvetica, sans-serif;
+                width: 70%;
+                border-radius: 19px;
+            }
+            .p3{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: small;
+                color: rgb(42, 34, 34);
+
+            }
+            h2{
+                font-size: large;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+            
+            
+        </style>
+
+</head>
+    <body>
+        <div class="container">
+        <div class="box">
+            <h2> LOGIN FORM </h2>
+            <input type="text" id="box1" name="credential" value="Email address">
+            <label for="box1"> </label><br>
+            <div>
+            <input type="text" id="box2" name="credential" value="Password">
+            <label for="box2"> </label><br></div>
+            <div class="p2"> <p>Forgot password?</p></div>
+            <button class="button button1">Login</button>
+            <div class="p3">
+                <p> Create an account <span style="color: rgb(33, 101, 201); cursor: pointer;">Sign up now</span></p>
+            </div>
+        </div>
+            
+        </div>
+       
+        
+        
+    </body>
+</html>
